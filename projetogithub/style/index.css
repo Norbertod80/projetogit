@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* força o elemento a obeder o tamanho do container em que foi criado*/
+     color: black;
+}
+
+.galeria{
+    margin: 200px auto;
+    width: 940px;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animaçao;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animaçao {
+    25%{ opacity: 1;
+        transform:scale(1.1,1.1);
+}
+    50%{
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1){
+}
+.foto:nth-child(2){
+    animation-delay: 10s;
+}
+.foto:nth-child(3){
+    animation-delay: 20s;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif; /* mudar tipo de letra*/
+    background-color:rgba(255, 208, 55, 0.021);
+    color: black;
+}
+
+#cabecalho{
+    background-color: rgb(255, 208, 55);
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+#area-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items:;
+}
+
+#menu{
+    display: inline-block;
+    align-items: center; /* alinhando os elementos na vertical*/
+    margin-right: 100px;
+    color: black;
+}
+
+#logotipo{
+    margin-top: 0;
+    width: 20%;
+}
+
+#menu li{
+    display: inline-block;
+    margin-left: 18px;
+}
+
+#menu a{
+    cursor: pointer; /* Mudar o cursor para uma mão*/
+    text-decoration: none;
+    color: black;
+    transition: all 1s; /* me permite determinar como vão ocorrer as transições, animações e transformações no elemento*/
+}
+
+/* estilização ao passar o cursor no elemento, disparando o evento hover*/
+#menu a:hover{
+    color: #ccc6a6;
+    font-size: 18px;
+}
+
+#banner{
+    background-color: rgba(41, 224, 230, 0.411);
+    width: 60%;
+    
+}
+
+#banner img{
+    align-items: center;
+    width: 60%;
+    height: 60%;
+}
+
+main{
+    text-align: center;
+    color: #222222;
+}
+
+main #intro{
+    margin-top: 30px;
+    padding: 30px;
+    color: #222;
+}
+
+#intro p{
+    margin-top: 12px;
+}
+
+/* ESTILIZANDO O CARTÃO DO CURSO e area do curso*/
+
+#area-cursos{
+    padding: 20px;
+    width: 100%;
+    display: flex; /* para usar as propriedades do flexbox*/
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+    
+}
+
+.cartao{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    width: 330px;
+    border-radius: 20px;
+}
+
+.cartao img{
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 50px
+
+}
+
+.cartao .conteudo{
+    padding: 20px;
+}
+
+.cartao .conteudo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+}
+
+.cartao .conteudo h4{
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 30px;
+    
+
+}
+
+
+footer{
+    background-color: rgb(255, 208, 55); 
+    padding: 20px;
+    margin-top: 100px;
+    color: black;
+    text-align: center; /* alinhar o texto ao centro*/
+}
+
+
+
+
